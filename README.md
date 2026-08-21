@@ -1,6 +1,6 @@
 # NPP — Ne paniquez pas ! On va tout faire péter
 
-Site de l'émission podcast de Gabriel et Pierre.
+Site de l'émission podcast de Doc Laundal et Tesla_burger.
 
 ## Fichiers
 
