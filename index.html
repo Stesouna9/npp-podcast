@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NPP — Ne paniquez pas ! On va tout faire péter</title>
+<meta name="description" content="NPP, l'émission podcast de Gabriel et Pierre. Ne paniquez pas, on va tout faire péter.">
+<meta property="og:title" content="NPP — Ne paniquez pas !">
+<meta property="og:description" content="L'émission podcast de Gabriel et Pierre.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💥</text></svg>">
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="kicker">Le podcast</p>
+    <h1>NPP</h1>
+    <p class="baseline">Ne paniquez pas !<br><span>On va tout faire péter.</span></p>
+    <p class="hosts">Une émission de <strong>Gabriel</strong> et <strong>Pierre</strong></p>
+    <div class="cta">
+      <a class="btn btn-primary" href="#ecouter">Écouter</a>
+      <a class="btn" href="#discord">Rejoindre le Discord</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="section" id="concept">
+  <div class="wrap">
+    <h2>Le concept</h2>
+    <p class="lead">
+      Chaque épisode, on prend un sujet, un invité, et on va au bout.
+      Pas de langue de bois, pas de montage qui lisse tout.
+      Une heure pour comprendre quelque chose qu'on ne comprenait pas ce matin.
+    </p>
+    <div class="grid">
+      <article class="card">
+        <span class="num">01</span>
+        <h3>Un sujet</h3>
+        <p>Un seul, creusé à fond, sans zapper au bout de dix minutes.</p>
+      </article>
+      <article class="card">
+        <span class="num">02</span>
+        <h3>Un invité</h3>
+        <p>Quelqu'un qui sait de quoi il parle, et qui a le droit de finir ses phrases.</p>
+      </article>
+      <article class="card">
+        <span class="num">03</span>
+        <h3>Vos questions</h3>
+        <p>Posées à l'avance sur le Discord, posées en direct pendant l'émission.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="ecouter">
+  <div class="wrap">
+    <h2>Les épisodes</h2>
+    <p class="lead">Le premier arrive bientôt. En attendant, rejoins le Discord pour ne pas le rater.</p>
+
+    <ol class="episodes">
+      <li class="episode soon">
+        <div class="ep-num">EP 01</div>
+        <div class="ep-body">
+          <h3>Bientôt</h3>
+          <p>Sujet et invité à annoncer.</p>
+        </div>
+        <div class="ep-meta">à venir</div>
+      </li>
+    </ol>
+
+    <p class="note">
+      À remplir au fur et à mesure : titre, invité, date, lien d'écoute.
+      Les plateformes seront ajoutées ici dès la publication du premier épisode.
+    </p>
+  </div>
+</section>
+
+<section class="section" id="discord">
+  <div class="wrap narrow">
+    <h2>Le Discord</h2>
+    <p class="lead">
+      C'est là que ça se passe entre deux émissions : les questions pour le prochain invité,
+      les suggestions, et le salon en direct pendant l'enregistrement.
+    </p>
+    <p class="cta">
+      <a class="btn btn-primary" href="#" id="discord-link">Rejoindre le serveur</a>
+    </p>
+    <p class="note">Lien d'invitation à coller dans <code>index.html</code>, ligne du bouton ci-dessus.</p>
+  </div>
+</section>
+
+<section class="section alt" id="contact">
+  <div class="wrap narrow">
+    <h2>Contact</h2>
+    <p class="lead">
+      Une idée de sujet, une envie de venir en parler, une proposition de partenariat ?
+    </p>
+    <p class="mail"><a href="mailto:contact@example.com">contact@example.com</a></p>
+    <p class="note">Adresse à remplacer par l'adresse de l'émission une fois créée.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>NPP — Ne paniquez pas ! On va tout faire péter.</p>
+    <p class="small">© <span id="year">2026</span> — Gabriel &amp; Pierre</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

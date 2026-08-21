@@ -1,0 +1,246 @@
+/* NPP — Ne paniquez pas ! On va tout faire péter */
+
+:root {
+  --bg: #0d0e12;
+  --bg-alt: #14161d;
+  --ink: #f2f3f7;
+  --ink-soft: #a7abba;
+  --accent: #ff4d2d;
+  --accent-2: #ffc93c;
+  --line: #262932;
+  --radius: 14px;
+  --wrap: 1080px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  width: 100%;
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.wrap.narrow { max-width: 720px; }
+
+a { color: var(--accent-2); }
+
+/* ---------- hero ---------- */
+
+.hero {
+  position: relative;
+  padding: 120px 0 100px;
+  overflow: hidden;
+  background:
+    radial-gradient(900px 500px at 15% -10%, rgba(255, 77, 45, .28), transparent 60%),
+    radial-gradient(700px 500px at 90% 10%, rgba(255, 201, 60, .16), transparent 60%),
+    var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+
+.kicker {
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: .28em;
+  font-size: .78rem;
+  color: var(--ink-soft);
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(5rem, 22vw, 12rem);
+  line-height: .82;
+  letter-spacing: -.04em;
+  font-weight: 800;
+  background: linear-gradient(120deg, var(--accent) 10%, var(--accent-2) 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.baseline {
+  margin: 24px 0 0;
+  font-size: clamp(1.4rem, 4vw, 2.4rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -.01em;
+}
+
+.baseline span { color: var(--accent); }
+
+.hosts {
+  margin: 20px 0 0;
+  color: var(--ink-soft);
+}
+
+.hosts strong { color: var(--ink); }
+
+.cta {
+  margin: 36px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 26px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .03);
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform .15s ease, background .15s ease, border-color .15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  border-color: var(--ink-soft);
+  background: rgba(255, 255, 255, .07);
+}
+
+.btn-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.btn-primary:hover { background: #ff6146; border-color: #ff6146; }
+
+/* ---------- sections ---------- */
+
+.section { padding: 88px 0; }
+.section.alt { background: var(--bg-alt); border-block: 1px solid var(--line); }
+
+h2 {
+  margin: 0 0 18px;
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  letter-spacing: -.02em;
+}
+
+.lead {
+  margin: 0 0 36px;
+  max-width: 62ch;
+  font-size: 1.1rem;
+  color: var(--ink-soft);
+}
+
+.note {
+  margin-top: 24px;
+  font-size: .9rem;
+  color: #6f7484;
+}
+
+code {
+  background: rgba(255, 255, 255, .07);
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: .85em;
+}
+
+/* ---------- cards ---------- */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, .02);
+}
+
+.card .num {
+  display: block;
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .2em;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.card h3 { margin: 0 0 8px; font-size: 1.15rem; }
+.card p { margin: 0; color: var(--ink-soft); }
+
+/* ---------- episodes ---------- */
+
+.episodes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.episode {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 24px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, .02);
+}
+
+.ep-num {
+  font-weight: 800;
+  letter-spacing: .06em;
+  color: var(--accent);
+  min-width: 74px;
+}
+
+.ep-body { flex: 1; }
+.ep-body h3 { margin: 0 0 4px; font-size: 1.1rem; }
+.ep-body p { margin: 0; color: var(--ink-soft); font-size: .95rem; }
+
+.ep-meta {
+  font-size: .82rem;
+  color: var(--ink-soft);
+  border: 1px solid var(--line);
+  padding: 4px 12px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.episode.soon { opacity: .8; }
+
+/* ---------- contact ---------- */
+
+.mail {
+  font-size: clamp(1.2rem, 4vw, 1.8rem);
+  font-weight: 700;
+  margin: 0;
+  word-break: break-word;
+}
+
+/* ---------- footer ---------- */
+
+footer {
+  padding: 44px 0;
+  border-top: 1px solid var(--line);
+  color: var(--ink-soft);
+}
+
+footer p { margin: 0 0 6px; }
+footer .small { font-size: .85rem; color: #6f7484; }
+
+@media (max-width: 560px) {
+  .hero { padding: 88px 0 72px; }
+  .section { padding: 64px 0; }
+  .episode { flex-wrap: wrap; gap: 12px; }
+}
