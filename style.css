@@ -309,3 +309,10 @@ footer .small { font-size: .85rem; color: #64748f; }
   .section { padding: 64px 0; }
   .episode { flex-wrap: wrap; gap: 12px; }
 }
+
+.donate-soon {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--cyan-soft);
+}
