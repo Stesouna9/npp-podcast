@@ -316,3 +316,40 @@ footer .small { font-size: .85rem; color: #64748f; }
   font-weight: 700;
   color: var(--cyan-soft);
 }
+
+/* ---------- plateformes d'ecoute ---------- */
+
+.plateformes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0 0 30px;
+}
+
+.plat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 14px 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, .03);
+  text-decoration: none;
+  color: var(--ink);
+  transition: border-color .15s ease, transform .15s ease;
+}
+a.plat:hover { border-color: rgba(34, 184, 240, .55); transform: translateY(-2px); }
+
+.plat-nom { font-weight: 800; }
+.plat-etat {
+  font-size: .74rem;
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  color: var(--cyan);
+}
+.plat-attente { opacity: .6; }
+.plat-attente .plat-etat { color: var(--ink-soft); }
+
+.ep-liens { margin-top: 10px !important; display: flex; flex-wrap: wrap; gap: 16px; }
+.ep-liens a { font-size: .9rem; font-weight: 700; text-decoration: none; }
+.ep-liens a:hover { text-decoration: underline; }
