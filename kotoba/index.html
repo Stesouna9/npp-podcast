@@ -8,10 +8,17 @@
 <meta property="og:title" content="Kotoba — le jeu de mots en 6 essais (iOS & Android)">
 <meta property="og:description" content="Devinez le mot secret en 6 essais. Défi du jour, mode aventure de 240 niveaux et 6 modes de jeu. Gratuit sur iPhone et Android.">
 <meta property="og:image" content="../img/apps/kotoba-feature.jpg">
+<meta property="og:image:alt" content="Kotoba, le jeu de mots en 6 essais">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="OKALAM Studio">
+<meta property="og:locale" content="fr_FR">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="../style.css?v=4">
-<link rel="stylesheet" href="../apps.css?v=1">
+<meta name="twitter:title" content="Kotoba — le jeu de mots en 6 essais (iOS & Android)">
+<meta name="twitter:description" content="Devinez le mot secret en 6 essais. Défi du jour, mode aventure de 240 niveaux et 6 modes de jeu. Gratuit sur iPhone et Android.">
+<meta name="twitter:image" content="../img/apps/kotoba-feature.jpg">
+<meta name="twitter:image:alt" content="Kotoba, le jeu de mots en 6 essais">
+<link rel="stylesheet" href="../style.css?v=5">
+<link rel="stylesheet" href="../apps.css?v=2">
 <link rel="icon" href="../img/favicon.png">
 </head>
 <body>
@@ -32,15 +39,19 @@
     <h1>Kotoba</h1>
     <p class="tag">Le jeu de mots à la française : devine le mot secret en 6 essais, première lettre toujours révélée.</p>
     <div class="stores">
-      <span class="store soon ios"><small>Télécharger sur</small><strong>App Store</strong><small>bientôt disponible</small></span>
-      <span class="store soon android"><small>Disponible sur</small><strong>Google Play</strong><small>bientôt disponible</small></span>
+      <span class="store soon ios" id="ios" data-etat="en cours de validation par Apple" aria-disabled="true"><small>Télécharger sur</small><strong>App Store</strong><small>bientôt disponible · en validation</small></span>
+      <span class="store soon android" id="android" data-etat="en test fermé" aria-disabled="true"><small>Disponible sur</small><strong>Google Play</strong><small>bientôt disponible · test fermé</small></span>
     </div>
-    <p class="stores-note">Gratuit. iPhone, iPad et Android.</p>
+    <p class="stores-note" id="stores-note">Gratuit. iPhone, iPad et Android.</p>
     <script>
       (function () {
         var ua = navigator.userAgent || '';
-        var el = /android/i.test(ua) ? document.getElementById('android') : (/iphone|ipad|ipod|macintosh/i.test(ua) && 'ontouchend' in document ? document.getElementById('ios') : null);
-        if (el) el.classList.add('recommended');
+        var id = /android/i.test(ua) ? 'android' : (/iphone|ipad|ipod/i.test(ua) || (/macintosh/i.test(ua) && navigator.maxTouchPoints > 1) ? 'ios' : '');
+        var el = id && document.getElementById(id);
+        if (!el) return;
+        el.classList.add('recommended');
+        var n = document.getElementById('stores-note');
+        if (n && el.classList.contains('soon')) n.textContent = 'Pas encore disponible sur ' + (id === 'ios' ? 'iPhone et iPad' : 'Android') + ' : ' + el.getAttribute('data-etat') + '.';
       })();
     </script>
     <div class="share">
@@ -62,7 +73,7 @@
 <main>
 <section class="section"><div class="wrap">
   <h2>Aperçu</h2>
-  <div class="shots"><img src="../img/apps/kotoba-01_home.jpg" alt="Kotoba — capture 1" loading="lazy"><img src="../img/apps/kotoba-02_game.jpg" alt="Kotoba — capture 2" loading="lazy"><img src="../img/apps/kotoba-03_adventure.jpg" alt="Kotoba — capture 3" loading="lazy"><img src="../img/apps/kotoba-04_store.jpg" alt="Kotoba — capture 4" loading="lazy"></div>
+  <div class="shots"><img src="../img/apps/kotoba-01_home.jpg" alt="Kotoba — écran : accueil" loading="lazy"><img src="../img/apps/kotoba-02_game.jpg" alt="Kotoba — écran : une partie en cours" loading="lazy"><img src="../img/apps/kotoba-03_adventure.jpg" alt="Kotoba — écran : le mode aventure" loading="lazy"><img src="../img/apps/kotoba-04_store.jpg" alt="Kotoba — écran : la boutique" loading="lazy"></div>
   <h2>Pourquoi tu vas t'y accrocher</h2>
   <div class="feat-grid"><div class="feat"><h3>Un défi par jour</h3><p>Le même mot pour tout le monde, une seule chance. Garde ta série.</p></div><div class="feat"><h3>Mode aventure</h3><p>240 niveaux, 10 mondes, des boss, des coffres et trois étoiles par niveau.</p></div><div class="feat"><h3>6 modes de jeu</h3><p>Blitz, Infini, Contretemps, Aveugle, Tournoi et Libre (4 à 8 lettres).</p></div><div class="feat"><h3>Score Aura</h3><p>Plus tu trouves vite, plus ton Aura grimpe. Statistiques et historique détaillés.</p></div><div class="feat"><h3>Dictionnaire complet</h3><p>Plus de 100 000 mots valides, accents ignorés.</p></div><div class="feat"><h3>Mode difficile</h3><p>Les lettres absentes sont bloquées. Pour les puristes.</p></div></div>
 </div></section>

@@ -187,7 +187,7 @@ h2::after {
   color: var(--ink-soft);
 }
 
-.note { margin-top: 24px; font-size: .9rem; color: #64748f; }
+.note { margin-top: 24px; font-size: .9rem; color: #8a99b5; }
 
 /* ---------- cartes ---------- */
 
@@ -347,9 +347,17 @@ a.plat:hover { border-color: rgba(34, 184, 240, .55); transform: translateY(-2px
   letter-spacing: .16em;
   color: var(--cyan);
 }
-.plat-attente { opacity: .6; }
+.plat-attente { opacity: .85; border-style: dashed; }
 .plat-attente .plat-etat { color: var(--ink-soft); }
 
 .ep-liens { margin-top: 10px !important; display: flex; flex-wrap: wrap; gap: 16px; }
 .ep-liens a { font-size: .9rem; font-weight: 700; text-decoration: none; }
 .ep-liens a:hover { text-decoration: underline; }
+
+/* ---------- encart "Dans l'épisode" ---------- */
+.episode-apps { margin: 24px 0 28px; padding: 18px 22px; border: 1px solid var(--line); border-left: 3px solid var(--cyan); border-radius: var(--radius); background: var(--bg-alt); }
+.episode-apps .kicker { margin: 0 0 8px; }
+.episode-apps ul { margin: 0; padding-left: 1.1em; color: var(--ink-soft); }
+.episode-apps li { margin: 4px 0; }
+.episode-apps strong { color: var(--ink); }
+.episode-apps .small { margin: 10px 0 0; font-size: .9rem; color: var(--ink-soft); }

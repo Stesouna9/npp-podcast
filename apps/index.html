@@ -8,10 +8,17 @@
 <meta property="og:title" content="Nos apps — Kotoba et VoteDay">
 <meta property="og:description" content="Kotoba (jeu de mots) et VoteDay (vote quotidien) : les apps de OKALAM Studio pour iPhone et Android.">
 <meta property="og:image" content="../img/apps/kotoba-feature.jpg">
+<meta property="og:image:alt" content="Kotoba, le jeu de mots en 6 essais">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="OKALAM Studio">
+<meta property="og:locale" content="fr_FR">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="../style.css?v=4">
-<link rel="stylesheet" href="../apps.css?v=1">
+<meta name="twitter:title" content="Nos apps — Kotoba et VoteDay">
+<meta name="twitter:description" content="Kotoba (jeu de mots) et VoteDay (vote quotidien) : les apps de OKALAM Studio pour iPhone et Android.">
+<meta name="twitter:image" content="../img/apps/kotoba-feature.jpg">
+<meta name="twitter:image:alt" content="Kotoba, le jeu de mots en 6 essais">
+<link rel="stylesheet" href="../style.css?v=5">
+<link rel="stylesheet" href="../apps.css?v=2">
 <link rel="icon" href="../img/favicon.png">
 </head>
 <body>
@@ -33,11 +40,37 @@
 </div></header>
 <main><section class="section"><div class="wrap">
   <div class="apps-grid">
-    <a class="app-card" href="../kotoba/"><img class="app-icon" src="../img/apps/kotoba-icon.png" alt="Kotoba"><h3>Kotoba</h3>
+    <a class="app-card" href="../kotoba/"><img class="app-icon" src="../img/apps/kotoba-icon.png" alt="" width="72" height="72"><h3>Kotoba</h3>
       <p>Devine le mot secret en 6 essais. Défi du jour, 240 niveaux d'aventure.</p><strong>Découvrir →</strong></a>
-    <a class="app-card" href="../voteday/"><img class="app-icon" src="../img/apps/voteday-icon.png" alt="VoteDay"><h3>VoteDay</h3>
+    <a class="app-card" href="../voteday/"><img class="app-icon" src="../img/apps/voteday-icon.png" alt="" width="72" height="72"><h3>VoteDay</h3>
       <p>Une question par jour, vote A ou B, crée ton Bubl et explore ton île.</p><strong>Découvrir →</strong></a>
   </div>
+  <h2 id="dispo" class="dispo-title">Où les télécharger</h2>
+  <div class="dispo">
+    <div class="dispo-app">
+      <h3>Kotoba</h3>
+      <div class="stores">
+        <span class="store soon ios" id="ios-kotoba" aria-disabled="true"><small>Télécharger sur</small><strong>App Store</strong><small>bientôt disponible · en validation</small></span>
+        <span class="store soon android" id="android-kotoba" aria-disabled="true"><small>Disponible sur</small><strong>Google Play</strong><small>bientôt disponible · test fermé</small></span>
+      </div>
+    </div>
+    <div class="dispo-app">
+      <h3>VoteDay</h3>
+      <div class="stores">
+        <a class="store ios" id="ios-voteday" href="https://apps.apple.com/fr/app/voteday/id6760981728" target="_blank" rel="noopener"><small>Télécharger sur</small><strong>App Store</strong></a>
+        <span class="store soon android" id="android-voteday" aria-disabled="true"><small>Disponible sur</small><strong>Google Play</strong><small>bientôt disponible · test fermé</small></span>
+      </div>
+    </div>
+  </div>
+  <p class="stores-note">Gratuit. Les badges « bientôt disponible » ne sont pas cliquables tant que l'app n'est pas publiée sur le store concerné.</p>
+  <script>
+    (function () {
+      var ua = navigator.userAgent || '';
+      var p = /android/i.test(ua) ? 'android' : (/iphone|ipad|ipod/i.test(ua) || (/macintosh/i.test(ua) && navigator.maxTouchPoints > 1) ? 'ios' : '');
+      if (!p) return;
+      ['kotoba', 'voteday'].forEach(function (a) { var el = document.getElementById(p + '-' + a); if (el) el.classList.add('recommended'); });
+    })();
+  </script>
   <div class="share">
       <button type="button" id="share-btn">Partager</button>
       <a href="https://wa.me/?text=D%C3%A9couvre%20Kotoba%20et%20VoteDay" target="_blank" rel="noopener">WhatsApp</a>
