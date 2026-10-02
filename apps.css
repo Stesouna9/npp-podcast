@@ -27,7 +27,8 @@
 .store strong { font-size: 1.05rem; }
 .store:hover { border-color: var(--cyan); }
 .store.recommended { border-color: var(--cyan); box-shadow: 0 0 0 1px var(--cyan) inset; }
-.store.soon { opacity: .6; pointer-events: none; }
+.store.soon { opacity: .85; border-style: dashed; pointer-events: none; cursor: default; }
+.store:focus-visible, .share a:focus-visible, .share button:focus-visible { outline: 2px solid var(--cyan-soft); outline-offset: 2px; }
 .stores-note { color: var(--ink-soft); font-size: .9rem; margin: 6px 0 0; }
 
 .shots { display: flex; gap: 16px; overflow-x: auto; padding: 8px 0 20px; scroll-snap-type: x mandatory; }
@@ -59,3 +60,7 @@
 .legal .updated { font-size: .9rem; }
 
 @media (max-width: 600px) { .shots img { height: 340px; } .app-hero { padding: 48px 0 40px; } }
+
+.dispo-title { margin-top: 40px; }
+.dispo { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+.dispo-app h3 { margin: 0 0 4px; }

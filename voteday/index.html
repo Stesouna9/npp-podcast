@@ -8,10 +8,17 @@
 <meta property="og:title" content="VoteDay — une question par jour, vote A ou B (iOS & Android)">
 <meta property="og:description" content="Chaque jour à 17h, une nouvelle question. Vote A ou B, compare avec tes amis et le monde, crée ton Bubl. Gratuit sur iPhone et Android.">
 <meta property="og:image" content="../img/apps/voteday-feature.jpg">
+<meta property="og:image:alt" content="VoteDay, le vote quotidien">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="OKALAM Studio">
+<meta property="og:locale" content="fr_FR">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="../style.css?v=4">
-<link rel="stylesheet" href="../apps.css?v=1">
+<meta name="twitter:title" content="VoteDay — une question par jour, vote A ou B (iOS & Android)">
+<meta name="twitter:description" content="Chaque jour à 17h, une nouvelle question. Vote A ou B, compare avec tes amis et le monde, crée ton Bubl. Gratuit sur iPhone et Android.">
+<meta name="twitter:image" content="../img/apps/voteday-feature.jpg">
+<meta name="twitter:image:alt" content="VoteDay, le vote quotidien">
+<link rel="stylesheet" href="../style.css?v=5">
+<link rel="stylesheet" href="../apps.css?v=2">
 <link rel="icon" href="../img/favicon.png">
 </head>
 <body>
@@ -33,14 +40,18 @@
     <p class="tag">Une question par jour. Vote A ou B avant 17h et découvre ce que pense le monde.</p>
     <div class="stores">
       <a class="store ios" id="ios" href="https://apps.apple.com/fr/app/voteday/id6760981728" target="_blank" rel="noopener"><small>Télécharger sur</small><strong>App Store</strong></a>
-      <span class="store soon android"><small>Disponible sur</small><strong>Google Play</strong><small>bientôt disponible</small></span>
+      <span class="store soon android" id="android" data-etat="en test fermé" aria-disabled="true"><small>Disponible sur</small><strong>Google Play</strong><small>bientôt disponible</small></span>
     </div>
-    <p class="stores-note">Gratuit. iPhone, iPad et Android.</p>
+    <p class="stores-note" id="stores-note">Gratuit. iPhone, iPad et Android.</p>
     <script>
       (function () {
         var ua = navigator.userAgent || '';
-        var el = /android/i.test(ua) ? document.getElementById('android') : (/iphone|ipad|ipod|macintosh/i.test(ua) && 'ontouchend' in document ? document.getElementById('ios') : null);
-        if (el) el.classList.add('recommended');
+        var id = /android/i.test(ua) ? 'android' : (/iphone|ipad|ipod/i.test(ua) || (/macintosh/i.test(ua) && navigator.maxTouchPoints > 1) ? 'ios' : '');
+        var el = id && document.getElementById(id);
+        if (!el) return;
+        el.classList.add('recommended');
+        var n = document.getElementById('stores-note');
+        if (n && el.classList.contains('soon')) n.textContent = 'Pas encore disponible sur ' + (id === 'ios' ? 'iPhone et iPad' : 'Android') + ' : ' + el.getAttribute('data-etat') + '.';
       })();
     </script>
     <div class="share">
@@ -62,7 +73,7 @@
 <main>
 <section class="section"><div class="wrap">
   <h2>Aperçu</h2>
-  <div class="shots"><img src="../img/apps/voteday-01_menu.jpg" alt="VoteDay — capture 1" loading="lazy"><img src="../img/apps/voteday-02_vote.jpg" alt="VoteDay — capture 2" loading="lazy"><img src="../img/apps/voteday-03_bubl_du_jour.jpg" alt="VoteDay — capture 3" loading="lazy"><img src="../img/apps/voteday-04_ile.jpg" alt="VoteDay — capture 4" loading="lazy"><img src="../img/apps/voteday-06_cartes.jpg" alt="VoteDay — capture 5" loading="lazy"></div>
+  <div class="shots"><img src="../img/apps/voteday-01_menu.jpg" alt="VoteDay — écran : le menu" loading="lazy"><img src="../img/apps/voteday-02_vote.jpg" alt="VoteDay — écran : le vote A ou B" loading="lazy"><img src="../img/apps/voteday-03_bubl_du_jour.jpg" alt="VoteDay — écran : le Bubl du jour" loading="lazy"><img src="../img/apps/voteday-04_ile.jpg" alt="VoteDay — écran : ton île" loading="lazy"><img src="../img/apps/voteday-06_cartes.jpg" alt="VoteDay — écran : les cartes" loading="lazy"></div>
   <h2>Ce qui t'attend</h2>
   <div class="feat-grid"><div class="feat"><h3>1 question par jour</h3><p>Elle ferme à 17h (heure de Paris). Vote A ou B et compare avec tes amis et le monde.</p></div><div class="feat"><h3>Ton Bubl</h3><p>Un avatar unique que tu personnalises : cheveux, yeux, couleurs, accessoires.</p></div><div class="feat"><h3>Ton île</h3><p>Mairie, Café, Scène, Studio Photo, Galerie, École, Observatoire : à toi de l'explorer.</p></div><div class="feat"><h3>Bubl du Jour</h3><p>Présente ton Bubl, vote pour tes préférés. Le top 3 est récompensé chaque jour.</p></div><div class="feat"><h3>Cartes Bubl</h3><p>Un tirage gratuit par jour, des packs à ouvrir, plus de 100 espèces à collectionner.</p></div><div class="feat"><h3>Amis</h3><p>Ajoute-les avec @username, compare vos votes et entretenez votre série.</p></div></div>
   <p class="lead">Pas de fil d'actualité infini. Juste une question par jour pour parler avec ceux que tu aimes. À 17h, on se retrouve.</p>
