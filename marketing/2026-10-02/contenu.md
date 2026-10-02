@@ -7,7 +7,7 @@ Rien n'est publié ni envoyé. Tout est à relire par Gabriel avant copie.
 - VoteDay : une question par jour à 17h (Paris), vote A ou B, résultats amis/monde, streaks, île « Bubl » personnalisable avec 7 bâtiments, 9 langues. iOS en ligne : https://apps.apple.com/fr/app/voteday/id6760981728. Android : « bientôt » (test fermé, pas de date).
 - Kotoba : jeu de mots en 6 essais, première lettre révélée, rouge = bien placé, jaune = présent, gris = absent. Modes : Classique, Défi du jour (5 lettres, même mot pour tous), Aventure (240 niveaux, 10 mondes), Blitz, Infini, Aveugle, Contretemps, Tournoi. Langues du jeu à ce jour : français et japonais (ne pas promettre d'autres langues). iOS en validation Apple : **lien store bientôt** (ne pas en inventer). Android bientôt, pas de date.
 - Aucun chiffre de téléchargements, note ou avis. Aucune date de sortie. Pas de fausse urgence.
-- Les pages /kotoba/ et /voteday/ sont hébergées par le site du podcast (PR npp-podcast#1). Je ne connais pas le domaine final : remplacer `[LIEN PAGE KOTOBA]` et `[LIEN PAGE VOTEDAY]` au moment de publier.
+- Les pages /kotoba/ et /voteday/ sont hébergées par le site du podcast (PR npp-podcast#1). Je ne connais pas le domaine final : remplacer `https://stesouna9.github.io/npp-podcast/kotoba/` et `https://stesouna9.github.io/npp-podcast/voteday/` au moment de publier.
 - Mention de fond à garder : studio indépendant OKALAM, app gratuite avec achats intégrés et pubs (Kotoba). Vérifier avant de dire « sans pub » : ne pas le dire.
 
 ---
@@ -335,7 +335,7 @@ Recommandation : ne pas lancer sur Product Hunt avant que le lien store existe ;
 > **Du côté des apps OKALAM**
 > VoteDay : une question par jour à 17h (Paris), un vote A ou B, les résultats de tes amis et du monde, des séries et une île Bubl à personnaliser. Disponible sur iPhone : https://apps.apple.com/fr/app/voteday/id6760981728 (Android bientôt, en test fermé).
 > Kotoba : un jeu de mots en 6 essais, en validation Apple pour iPhone. Lien bientôt, Android ensuite.
-> Pages des apps : [LIEN PAGE VOTEDAY] et [LIEN PAGE KOTOBA]
+> Pages des apps : https://stesouna9.github.io/npp-podcast/voteday/ et https://stesouna9.github.io/npp-podcast/kotoba/
 
 ---
 
