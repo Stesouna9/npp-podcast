@@ -6,6 +6,9 @@ Site de l'émission podcast de Doc Laundal et Tesla_burger.
 
 - `index.html` — toute la page
 - `style.css` — l'habillage
+- `apps.css` — habillage des pages apps
+- `apps/`, `kotoba/`, `voteday/`, `support/`, `confidentialite/` — site des apps OKALAM Studio
+- `marketing/` — journal des idées de promo (routine nocturne)
 
 ## À compléter
 

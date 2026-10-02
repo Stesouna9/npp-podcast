@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nos apps — Kotoba et VoteDay</title>
+<meta name="description" content="Kotoba (jeu de mots) et VoteDay (vote quotidien) : les apps de OKALAM Studio pour iPhone et Android.">
+<meta property="og:title" content="Nos apps — Kotoba et VoteDay">
+<meta property="og:description" content="Kotoba (jeu de mots) et VoteDay (vote quotidien) : les apps de OKALAM Studio pour iPhone et Android.">
+<meta property="og:image" content="../img/apps/kotoba-feature.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="../style.css?v=4">
+<link rel="stylesheet" href="../apps.css?v=1">
+<link rel="icon" href="../img/favicon.png">
+</head>
+<body>
+<div class="topbar"><div class="wrap">
+  <a class="brand" href="../apps/">OKALAM Studio</a>
+  <nav>
+    <a href="../kotoba/">Kotoba</a>
+    <a href="../voteday/">VoteDay</a>
+    <a href="../support/">Support</a>
+    <a href="https://discord.gg/a42kMBcp4a" target="_blank" rel="noopener">Discord</a>
+    <a href="../">Podcast NPP</a>
+  </nav>
+</div></div>
+
+<header class="app-hero"><div class="wrap">
+  <p class="kicker">OKALAM Studio</p>
+  <h1>Nos apps</h1>
+  <p class="tag">Des petits jeux malins pour iPhone et Android, faits à Nantes.</p>
+</div></header>
+<main><section class="section"><div class="wrap">
+  <div class="apps-grid">
+    <a class="app-card" href="../kotoba/"><img class="app-icon" src="../img/apps/kotoba-icon.png" alt="Kotoba"><h3>Kotoba</h3>
+      <p>Devine le mot secret en 6 essais. Défi du jour, 240 niveaux d'aventure.</p><strong>Découvrir →</strong></a>
+    <a class="app-card" href="../voteday/"><img class="app-icon" src="../img/apps/voteday-icon.png" alt="VoteDay"><h3>VoteDay</h3>
+      <p>Une question par jour, vote A ou B, crée ton Bubl et explore ton île.</p><strong>Découvrir →</strong></a>
+  </div>
+  <div class="share">
+      <button type="button" id="share-btn">Partager</button>
+      <a href="https://wa.me/?text=D%C3%A9couvre%20Kotoba%20et%20VoteDay" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://twitter.com/intent/tweet?text=D%C3%A9couvre%20Kotoba%20et%20VoteDay" target="_blank" rel="noopener">X</a>
+      <a href="https://www.reddit.com/submit?title=D%C3%A9couvre%20Kotoba%20et%20VoteDay" target="_blank" rel="noopener">Reddit</a>
+    </div>
+    <script>
+      document.getElementById('share-btn').addEventListener('click', function () {
+        var d = { title: document.title, url: location.href };
+        if (navigator.share) { navigator.share(d).catch(function () {}); }
+        else if (navigator.clipboard) { navigator.clipboard.writeText(location.href); this.textContent = 'Lien copié !'; }
+      });
+    </script>
+</div></section>
+<section class="section alt"><div class="wrap narrow">
+    <h2>Une idée, un bug, une question ?</h2>
+    <p class="lead">Rejoins le Discord pour discuter de nos apps, proposer des idées et suivre les nouveautés, ou écris-nous via la page support.</p>
+    <p class="cta"><a class="btn btn-primary" href="https://discord.gg/a42kMBcp4a" target="_blank" rel="noopener">Rejoindre le Discord</a> <a class="btn" href="../support/">Support</a></p>
+  </div></section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>OKALAM Studio — jeux et apps créés à Nantes.</p>
+    <p class="small"><a href="../support/">Support</a> · <a href="../confidentialite/">Confidentialité</a> · <a href="https://discord.gg/a42kMBcp4a" target="_blank" rel="noopener">Discord</a> · © <span id="year">2026</span></p>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
