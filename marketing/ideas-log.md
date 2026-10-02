@@ -10,3 +10,4 @@ Mis à jour chaque nuit par la routine. Ne jamais répéter une idée déjà lis
 | 2026-10-02 | AlternativeTo « Wordle Alternatives » pour Kotoba | à faire par Gabriel |
 | 2026-10-02 | Product Hunt (VoteDay maintenant, Kotoba après sortie du lien) | à planifier |
 | 2026-10-02 | Newsletters Indie Watch / Indie Dev Monday, r/iosapps, r/SideProject | à vérifier (règles) |
+| 2026-10-02 | Visuels post + story pour chaque app, image d'aperçu des liens | fait (prêt à poster) |
