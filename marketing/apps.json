@@ -1,0 +1,20 @@
+{
+  "maj": "2026-10-02",
+  "studio": "OKALAM Studio",
+  "apps": [
+    {
+      "nom": "VoteDay",
+      "pitch": "Une question par jour à 17h (Paris) : vote A ou B, puis résultats amis et monde. Streaks, île « Bubl », 9 langues.",
+      "ios": {"statut": "en ligne", "url": "https://apps.apple.com/fr/app/voteday/id6760981728", "depot": "Stesouna9/VoteDay"},
+      "android": {"statut": "bientôt (test fermé)", "url": null, "depot": "Stesouna9/voteday-android"},
+      "page_site": "voteday/"
+    },
+    {
+      "nom": "Kotoba",
+      "pitch": "Jeu de mots en 6 essais (français et japonais) : défi du jour, aventure, blitz, tournoi.",
+      "ios": {"statut": "en validation Apple (lien bientôt)", "url": null, "depot": "Stesouna9/kotoba-ios"},
+      "android": {"statut": "bientôt", "url": null, "depot": "Stesouna9/kotoba-android"},
+      "page_site": "kotoba/"
+    }
+  ]
+}
